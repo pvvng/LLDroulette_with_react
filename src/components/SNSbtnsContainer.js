@@ -6,7 +6,7 @@ export default function ShareBTNsContainer(){
     return(
         <div>
             {/* 공유하기 버튼 container */}
-            <div className='m-2 p-4 share-btn-container' style={{maxWidth:'1024px', border:'1px solid #eee', borderRadius:'30px'}}>
+            <div className='m-2 mb-4 p-4 share-btn-container' style={{maxWidth:'1024px', border:'1px solid #eee', borderRadius:'30px', background:'white'}}>
                 <h4 style={{fontWeight:'800'}}>공유하고 룰렛 더 돌리기</h4>
                 <div className='row'>
                 <div className='col-4' onClick={()=> clearLocalStorage()}>

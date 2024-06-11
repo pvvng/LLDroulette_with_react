@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&display=swap');
 
+@font-face {
+  font-family: 'PyeongChangPeace-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
   width: 100%;
@@ -7,14 +21,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Nanum Gothic', sans-serif;
-  font-weight: bold;
+  /* font-family: 'PyeongChangPeace-Bold'; */
+  /* font-weight: lighter; */
 }
-
-/* .wheel-container { */
-  /* 선택적으로 최대 너비를 설정 */
-  /* max-width: 500px;  */
-/* } */
 
 .hide-confetti{
   display: none;
@@ -44,6 +53,14 @@
   padding: 10px;
 }
 
+.PCPfont{
+  font-family: 'PyeongChangPeace-Bold';
+  /* font-weight: lighter; */
+}
+
+.PRfont{
+  font-family: 'Pretendard-Regular';
+}
 
 
 

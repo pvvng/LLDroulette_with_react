@@ -5,9 +5,9 @@ import Confetti from 'react-confetti';
 import data from './dataSets/data';
 import WheelComponent from './components/WheelComponent';
 import handleSpinClick from './functions/handleSpinClick';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCamera } from '@fortawesome/free-solid-svg-icons';
-import captureAndSaveScreenshot from './functions/captureAndSaveScreenshot'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCamera } from '@fortawesome/free-solid-svg-icons';
+// import captureAndSaveScreenshot from './functions/captureAndSaveScreenshot'
 import ShareBTNsContainer from './components/SNSbtnsContainer';
 import { spinBtnBackColor, spinBtnColor } from './dataSets/wheelSetting';
 
@@ -53,7 +53,7 @@ function App() {
   },[confettiStatus])
 
   return (
-    <div className="App">
+    <div className="App PRfont" style={{background:'#E6F0FF'}}>
 
       {/* 돌리기 완료시 파티클 뿌리기 */}
       {
@@ -69,7 +69,7 @@ function App() {
       }
 
       {/* image */}
-      <img className='mb-2' src={process.env.PUBLIC_URL + '/금산.png'} width='100%' alt='image3' style={{maxWidth:'1024px'}} />
+      <img src={process.env.PUBLIC_URL + '/로이드밤.png'} width='100%' alt='image3' style={{maxWidth:'1024px'}} />
 
       {/* 룰렛 & 룰렛 돌리기 버튼 */}
       <div className='wheel-container'>
@@ -94,36 +94,29 @@ function App() {
 
       {/* 당첨 상품 표시 container */}
       <div className='mt-5'>
-        <h2 style={{fontWeight:'bold', color:'#D94925'}}>당첨 상품</h2>
+        <h2 style={{fontWeight:'bold', color:'#2449C1'}}>당첨 상품</h2>
         <h5 className='mt-3' style={{fontWeight:'bold'}}>{prizeName}</h5>
       </div>
 
       {/* sns쉐어버튼 */}
       <ShareBTNsContainer/>
-      {/* 화면 캡쳐 버튼 */}
-      {/* <div>
-        <div className='mb-2 hidden-screenshot-text' style={{textAlign:'right'}}>
-          <span className=''> 화면 캡처하기</span>
-        </div>
-        <div className='btn btn-secondary mb-5 mx-2 p-3 screenshot-btn' style={{borderRadius:'10000px'}} onClick={()=>{captureAndSaveScreenshot()}}>
-          <FontAwesomeIcon icon={faCamera} className='fs-1' />
-        </div>
-      </div> */}
 
       {/* footer */}
-      <div style={{width:'100%', padding:20, color:'white', background:'#D94925', borderTopLeftRadius:'30px', borderTopRightRadius:'30px'}}>
+      <div className='PCPfont' style={{width:'100%', padding:20, color:'white', background:'#2449C1', borderTopLeftRadius:'30px', borderTopRightRadius:'30px'}}>
         <div className='row'>
           <div className='col-sm-9' style={{textAlign:'left'}}>
-            <h2 style={{fontWeight:'bold'}}>제 42회 금산 세계 인삼 축제</h2>
-            <p>2024.10.03 ~ 2024.10.13</p>
+            <h2 style={{fontWeight:'bold'}}>로이드밤 경품 증정 이벤트</h2>
+            <p>2024.06.03 ~ 2024.07.13</p>
           </div>
           <div className='col-sm-3' style={{marginTop:'auto', marginBottom:'auto'}}>
-            <img src='/MobilioLogo.png' width={'100px'} alt='mobilio'/>
+            <img src='/llb.png' className='mx-3' width={'100px'} alt = 'llb'/>
+            <img src='/MobilioLogo.png' width={'120px'} alt='mobilio'/>
           </div>
         </div>
 
       </div>
     </div>
+
   );
 }
 
