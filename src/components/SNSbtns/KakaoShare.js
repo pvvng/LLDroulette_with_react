@@ -19,9 +19,9 @@ export default function KakaoShare() {
         // description: '룰렛 돌리고 100% 당첨되는 보상 받기!',
 
         content: {
-          title : '제 42회 금산 세계 인삼 축제',
-          description: '10월 3일부터 13일까지 깨끗한 자연과 강인한 에너지가 넘치는 금산으로 여러분을 초대합니다 ', 
-          imageUrl : 'https://kfescdn.visitkorea.or.kr/kfes/upload/contents/db/933425f6-3f59-4de2-9d0d-39cbfb478d8e_3.jpg',
+          title : '로이드밤이 시원~한 이벤트 쏩니다!',
+          description: '더운 여름, 꽝 없는 룰렛 이벤트 참여하고 푸짐한 상품 받아가세요!', 
+          imageUrl : 'https://modo-phinf.pstatic.net/20210825_228/1629883956341vkLT1_JPEG/mosaeohCfg.jpeg?type=f320_320',
           link : {
             mobileWebUrl: 'https://developers.kakao.com',
             webUrl: 'https://developers.kakao.com',
